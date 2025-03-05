@@ -2,7 +2,7 @@
 iatest=$(expr index "$-" i)
 
 if [ -f /usr/bin/fastfetch ]; then
-	fastfetch --colors-block-range-start 9 --colors-block-width 3
+	fastfetch --colors-block-range-start 1 --colors-block-range-end 7 --colors-block-width 3
 fi
 
 if [ -f /etc/bash.bashrc ]; then
@@ -84,6 +84,7 @@ alias ls='ls -aFh --color=always' # add colors and file type extensions
 
 # Change directory aliases
 alias ..='cd ..'
+alias home='cd $HOME'
 
 
 # cd into the old directory
